@@ -36,6 +36,19 @@ you need to create "fid_stat" directory and download the statistical files of re
 
 
 # How to train the discovered architecture reported in the paper
-
-
+## 1. Fully train GAN on CIFAR-10
+<pre><code>bash ./scripts/train_arch_cifar10.sh
+</code></pre>
+## 2. Fully train GAN on STL-10
+<pre><code>bash ./scripts/train_arch_stl10.sh
+</code></pre>
 # How to test the discovered architecture reported in the paper
+
+## 1. Fully train GAN on CIFAR-10
+<pre><code>bash ./scripts/test_arch_cifar10.sh
+</code></pre>
+## 2. Fully train GAN on STL-10
+<pre><code>bash ./scripts/test_arch_stl10.sh
+</code></pre>
+
+
