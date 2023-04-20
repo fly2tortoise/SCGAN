@@ -9,18 +9,31 @@ We've desinged a evolutionary neural architecture search algorithm for generativ
 Fig:framework for T-EAGAN
 
 # Performance
+<!-- 这是注释![](./picture/C10.png)  ![](./picture/S10.png) -->
+picture1
 
-Fig:CIFAR-10
-
-Fig:STL-10
+picture2
 
 # Set-Up 
 ## environment requirements:
+The search environment is consistent with AlphaGAN，to run this code, you need:  
+- PyTorch 1.3.0  
+- TensorFlow 1.15.0  
+- cuda 10.0  
+
+Other requirements are in environment.yaml 
+
+<!-- install code  -->
+<pre><code>conda env create -f environment.yaml
+</code></pre>
 
 ## prepare fid statistic file
 
 
-# How to search & train the derived architecture by yourself
+# How to search the  architecture by yourself
 
 
-# How to train & test the discovered architecture reported in the paper
+# How to train the discovered architecture reported in the paper
+
+
+# How to test the discovered architecture reported in the paper
