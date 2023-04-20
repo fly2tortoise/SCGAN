@@ -15,7 +15,7 @@ picture1
 picture2
 
 # Set-Up 
-## environment requirements:
+## 1.environment requirements:
 The search environment is consistent with AlphaGAN，to run this code, you need:  
 - PyTorch 1.3.0  
 - TensorFlow 1.15.0  
@@ -27,7 +27,7 @@ Other requirements are in environment.yaml
 <pre><code>conda env create -f environment.yaml
 </code></pre>
 
-## prepare fid statistic file
+## 2.prepare fid statistic file
 you need to create "fid_stat" directory and download the statistical files of real images.
 <pre><code>mkdir fid_stat
 </code></pre>
