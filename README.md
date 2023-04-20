@@ -52,4 +52,11 @@ you need to create "fid_stat" directory and download the statistical files of re
 <pre><code>bash ./scripts/test_arch_stl10.sh
 </code></pre>
 
+# Acknowledgement
+1.[EAGAN](https://github.com/marsggbo/EAGAN)
 
+2.[AlphaGAN](https://github.com/yuesongtian/AlphaGAN)
+
+3.[Inception Score](https://github.com/openai/improved-gan/tree/master/inception_score) code from OpenAI's Improved GAN (official).
+
+4.[FID Score](https://github.com/bioinf-jku/TTUR) code and CIFAR-10 statistics file from  (official).
