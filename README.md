@@ -28,7 +28,9 @@ Other requirements are in environment.yaml
 </code></pre>
 
 ## prepare fid statistic file
-
+you need to create "fid_stat" directory and download the statistical files of real images.
+<pre><code>mkdir fid_stat
+</code></pre>
 
 # How to search the  architecture by yourself
 
