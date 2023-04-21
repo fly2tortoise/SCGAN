@@ -53,6 +53,8 @@ you need to create "fid_stat" directory and download the statistical files of re
 </code></pre>
 
 # Acknowledgement
+Some of the codes are built by:
+
 1.[EAGAN](https://github.com/marsggbo/EAGAN)
 
 2.[AlphaGAN](https://github.com/yuesongtian/AlphaGAN)
@@ -60,3 +62,5 @@ you need to create "fid_stat" directory and download the statistical files of re
 3.[Inception Score](https://github.com/openai/improved-gan/tree/master/inception_score) code from OpenAI's Improved GAN (official).
 
 4.[FID Score](https://github.com/bioinf-jku/TTUR) code and CIFAR-10 statistics file from  (official).
+
+Thanks them for their great works!
