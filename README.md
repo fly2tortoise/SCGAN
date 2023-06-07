@@ -1,5 +1,5 @@
 # T-EAGAN
-
+The search code will be published once the paper is accepted, and the training code and network weights will be published immediately.
 ## Code used for "Time-constrained Evolutionary Neural Architecture Search for Generative Adversarial Networks".
 
 # Introduction
