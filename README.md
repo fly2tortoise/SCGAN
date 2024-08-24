@@ -18,9 +18,9 @@ picture2
 # Set-Up 
 ## 1.environment requirements:
 The search environment is consistent with AlphaGAN，to run this code, you need:  
-- PyTorch 1.3.0  
-- TensorFlow 1.15.0  
-- cuda 10.0  
+- PyTorch 2.0  
+- TensorFlow 2.12.0  
+- cuda 12.0  
 
 Other requirements are in environment.yaml 
 
