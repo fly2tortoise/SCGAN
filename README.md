@@ -3,7 +3,7 @@ The search code will be published once the paper is accepted, and the training c
 ## Code used for "SCGAN: Sampling and Clustering-based Neural Architecture Search for GANs".
 
 # Introduction
-We've desinged a evolutionary neural architecture search algorithm for generative adversarial networks (GANs), dubbed T-EAGAN. Experiments validate the effectiveness of T-EAGAN on the task of unconditional image generation. Extensive experiments on the CIFAR-10 and STL-10 datasets demonstrated that T-EAGAN only requires 1.08 GPU days to find out a superior GAN architecture in a search space including approximately 10<sup>15</sup> network architectures. Our best-found GAN
+We've desinged a evolutionary neural architecture search algorithm for generative adversarial networks (GANs), dubbed SCGAN. Experiments validate the effectiveness of SCGAN on the task of unconditional image generation. Extensive experiments on the CIFAR-10 and STL-10 datasets demonstrated that T-EAGAN only requires 0.42 GPU days to find out a superior GAN architecture in a search space including approximately 10<sup>15</sup> network architectures. Our best-found GAN
 outperformed those obtained by other neural architecture search methods with performance metric results (IS=9.68±0.06, FID=5.54) on CIFAR-10 and (IS=12.12±0.13, FID=12.54) on STL-10.
 
 # Framework
