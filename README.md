@@ -1,5 +1,5 @@
 # SCGAN
-The search code will be published once the paper is accepted, and the training code and network weights will be published immediately.
+**The search code will be published once the paper is accepted.**
 ## Code used for "SCGAN: Sampling and Clustering-based Neural Architecture Search for GANs".
 
 # Introduction
