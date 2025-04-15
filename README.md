@@ -1,5 +1,5 @@
 # SCGAN
-**The search code will be published once the paper is accepted.**
+**This paper has just been received, and I will complete it as soon as possible.**
 ## Code used for "SCGAN: Sampling and Clustering-based Neural Architecture Search for GANs".
 
 # Introduction
