@@ -46,45 +46,26 @@ mkdir tmp
 
 
 
-
-
-# Set-Up 
-## 1.environment requirements:
-The search environment is consistent with CAGAN，to run this code, you need:  
-- PyTorch 2.0  
-- TensorFlow 2.12.0  
-- cuda 12.0  
-
-Other requirements are in environment.yaml 
-
-<!-- install code  -->
-<pre><code>conda env create -f environment.yaml
+## 2. Architecture Search
+### 2.1 Constraint Architecture Search to Design GANs
+<pre><code>bash train_search_gen.sh
+</code></pre> 
+### 2.2 Fully Train the Searched GANs Using the Hinge-loss Function
+<pre><code>bash train_arch_cifar10.sh
+bash train_arch_stl10.sh
+</code></pre>
+### 2.3 Fully Train the Searched GANs Using the MMD-GAN Loss Function
+We used the training environment provided by MMD-AdversarialNAS and found that the networks trained with the MMD-loss performed well. In this step, you only need to replace the training architecture of MMD-AdversarialNAS with the one found by CAGAN.
+<pre><code>bash train_arch_cifar10.sh
+bash train_arch_stl10.sh
 </code></pre>
 
-## 2.prepare fid statistic file
-you need to create "fid_stat" directory and download the statistical files of real images.
-<pre><code>mkdir fid_stat
-</code></pre>
+## If you have any questions, please email me. I will respond as soon as I have time. Thank you for your attention.
 
-# How to search the  architecture by yourself
-## 1. Search on CIFAR-10
-<pre><code>bash search_arch_generator.sh
-</code></pre>
-# How to train the discovered architecture reported in the paper
-## 1. Fully train GAN on CIFAR-10
-<pre><code>bash ./scripts/train_arch_cifar10.sh
-</code></pre>
-## 2. Fully train GAN on STL-10
-<pre><code>bash ./scripts/train_arch_stl10.sh
-</code></pre>
+# unfinished and to be continued
 
-# How to test the discovered architecture reported in the paper
-## 1. Fully train GAN on CIFAR-10
-<pre><code>bash ./scripts/test_arch_cifar10.sh
-</code></pre>
-## 2. Fully train GAN on STL-10
-<pre><code>bash ./scripts/test_arch_stl10.sh
-</code></pre>
+
+
 
 # Acknowledgement
 Some of the codes are built by:
