@@ -10,9 +10,6 @@ Fig:framework for SCGAN
 
 # Performance
 <!-- 这是注释![](./picture/C10.png)  ![](./picture/S10.png) -->
-picture1
-
-picture2
 
 # Set-Up 
 ## 1.environment requirements:
