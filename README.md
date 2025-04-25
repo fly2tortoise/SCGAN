@@ -11,7 +11,7 @@ The environment of SCGAN is more complex, training and searching are torch-based
 
 ## 1. Environment requirements:
 ### 1.1 Basic Requirements
-CAGAN's search environment uses the latest version of PyTorch 2.0 and above, along with TensorFlow 2.12 and above.
+SCGAN's search environment uses the latest version of PyTorch 2.0 and above, along with TensorFlow 2.12 and above.
 - python=3.11
 - pytorch=2.0.1
 - tensorflow=2.12.0
@@ -35,7 +35,7 @@ conda activate torch
 </code></pre>
 
 ### 1.3 Dataset Preparation (CIFAR-10 and STL-10)
-In CAGAN, we use the CIFAR-10 and STL-10 datasets for evaluation. The default datasets are stored in ./datasets/cifar10 and ./datasets/stl10.
+In SCGAN, we use the CIFAR-10 and STL-10 datasets for evaluation. The default datasets are stored in ./datasets/cifar10 and ./datasets/stl10.
 Readers can download them manually or use the data code to download them automatically.
 
 ### 1.4 Preparing the fid_stat and tmp Folders
