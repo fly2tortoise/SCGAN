@@ -41,21 +41,19 @@ Readers can download them manually or use the data code to download them automat
 
 ### 1.4 Preparing the fid_stat and tmp Folders
 You need to download the relevant data from EAGAN. https://github.com/marsggbo/EAGAN
-<pre><code>
+<pre><code>cd SCGAN/search/
+mkdir fid_stat
+mkdir tmp
+cd SCGAN/train/
 mkdir fid_stat
 mkdir tmp
 </code></pre>
 
-
-
-## 2. Architecture Search
-### 2.1 Constraint Architecture Search to Design GANs
-<pre><code>
-cd SCGAN/train/
-bash train_search_gen.sh
+## 2 Constraint Architecture Search to Design GANs
+<pre><code>bash train_search_gen.sh
 </code></pre> 
 
-### 2.2 Fully Train the Searched GANs Using the MMD-GAN Loss Function
+## 3 Fully Train the Searched GANs Using the MMD-GAN Loss Function
 We used the training environment provided by **MMD-AdversarialNAS** and found that the networks trained with the MMD-loss performed well. In this step, you only need to replace the training architecture of MMD-AdversarialNAS with the one found by SCGAN.
 <pre><code>
 python MGPU_train_arch.py --gpu_ids 0 --num_workers 8 --gen_bs 128 --dis_bs 128 --dataset cifar10 --bottom_width 4 --img_size 32 --max_epoch_G 500 --n_critic 1 --arch arch_cifar10 --draw_arch False --genotypes_exp arch_cifar10 --latent_dim 120 --gf_dim 256 --df_dim 512 --g_lr 0.0002 --d_lr 0.0002 --beta1 0.0 --beta2 0.9 --init_type xavier_uniform --val_freq 5 --num_eval_imgs 50000 --exp_name arch_train_cifar10
