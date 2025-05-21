@@ -1,4 +1,4 @@
-# This paper has just been accepted in April 2025, and I will complete it as soon as possible. 
+# I first updated the training part of the code, and the search will be updated soon.
 
 ## Code used for "SCGAN: Sampling and Clustering-based Neural Architecture Search for GANs".
 
@@ -50,12 +50,13 @@ mkdir tmp
 </code></pre>
 
 ## 2 Constraint Architecture Search to Design GANs
-<pre><code>bash train_search_gen.sh
+<pre><code>cd SCGAN/search/
+bash train_search_gen.sh
 </code></pre> 
 
 ## 3 Fully Train the Searched GANs Using the MMD-GAN Loss Function
 We used the training environment provided by **MMD-AdversarialNAS** and found that the networks trained with the MMD-loss performed well. In this step, you only need to replace the training architecture of MMD-AdversarialNAS with the one found by SCGAN.
-<pre><code>
+<pre><code>cd SCGAN/train/
 python MGPU_train_arch.py --gpu_ids 0 --num_workers 8 --gen_bs 128 --dis_bs 128 --dataset cifar10 --bottom_width 4 --img_size 32 --max_epoch_G 500 --n_critic 1 --arch arch_cifar10 --draw_arch False --genotypes_exp arch_cifar10 --latent_dim 120 --gf_dim 256 --df_dim 512 --g_lr 0.0002 --d_lr 0.0002 --beta1 0.0 --beta2 0.9 --init_type xavier_uniform --val_freq 5 --num_eval_imgs 50000 --exp_name arch_train_cifar10
   
 python MGPU_train_arch.py --gpu_ids 0 --num_workers 8 --gen_bs 128 --dis_bs 128 --dataset stl10 --bottom_width 6 --img_size 48 --max_epoch_G 500 --n_critic 1 --arch arch_cifar10 --draw_arch False --genotypes_exp arch_cifar10 --latent_dim 120 --gf_dim 256 --df_dim 512 --g_lr 0.0002 --d_lr 0.0002 --beta1 0.0 --beta2 0.9 --init_type xavier_uniform --val_freq 5 --num_eval_imgs 50000 --exp_name arch_train_stl10
