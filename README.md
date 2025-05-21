@@ -30,8 +30,9 @@ tar -xvf torch.tar
 ![image](https://github.com/user-attachments/assets/c85ea01b-ac3b-4b81-8fea-a8e990af247b)
 
 Then, activate the relevant environment.
-<pre><code>cd SCGAN 
+<pre><code>
 conda activate torch 
+cd SCGAN/search/
 </code></pre>
 
 ### 1.3 Dataset Preparation (CIFAR-10 and STL-10)
@@ -40,7 +41,8 @@ Readers can download them manually or use the data code to download them automat
 
 ### 1.4 Preparing the fid_stat and tmp Folders
 You need to download the relevant data from EAGAN. https://github.com/marsggbo/EAGAN
-<pre><code>mkdir fid_stat
+<pre><code>
+mkdir fid_stat
 mkdir tmp
 </code></pre>
 
@@ -48,7 +50,9 @@ mkdir tmp
 
 ## 2. Architecture Search
 ### 2.1 Constraint Architecture Search to Design GANs
-<pre><code>bash train_search_gen.sh
+<pre><code>
+cd SCGAN/train/
+bash train_search_gen.sh
 </code></pre> 
 
 ### 2.2 Fully Train the Searched GANs Using the MMD-GAN Loss Function
