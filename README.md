@@ -87,8 +87,8 @@ Thanks them for their great works!
 
 ```markdown
 ## 📚 Citation
-```bibtex
 
+```bibtex
 @article{zhu2025scgan,
   title={SCGAN: Sampling and clustering-based neural architecture search for GANs},
   author={Zhu, Qingling and Yang, Yeming and Liu, Songbai and Lin, Qiuzhen and Tan, Kay Chen},
