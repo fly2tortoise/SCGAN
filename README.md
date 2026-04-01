@@ -83,3 +83,17 @@ Some of the codes are built by:
 5.[MMD-AdversarialNAS](https://github.com/PrasannaPulakurthi/MMD-AdversarialNAS). 
 
 Thanks them for their great works!
+
+
+```markdown
+## 📚 Citation
+```bibtex
+
+@article{zhu2025scgan,
+  title={SCGAN: Sampling and clustering-based neural architecture search for GANs},
+  author={Zhu, Qingling and Yang, Yeming and Liu, Songbai and Lin, Qiuzhen and Tan, Kay Chen},
+  journal={IEEE Transactions on Emerging Topics in Computational Intelligence},
+  year={2025},
+  publisher={IEEE}
+}
+
